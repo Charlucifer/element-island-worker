@@ -1,5 +1,5 @@
-name = "element-island"
-main = "src/worker.js"
+name = "element-island-worker"
+main = "src/worker.mjs"
 compatibility_date = "2025-01-15"
 
 # 静态文件（index.html / rules.html / game.js ...）
