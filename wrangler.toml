@@ -1,0 +1,17 @@
+name = "element-island"
+main = "src/worker.js"
+compatibility_date = "2025-01-15"
+
+# 静态文件（index.html / rules.html / game.js ...）
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+# 房间状态放在一个 Durable Object 里
+[[durable_objects.bindings]]
+name = "ROOMS"
+class_name = "Rooms"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["Rooms"]
